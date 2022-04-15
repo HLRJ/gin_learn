@@ -12,7 +12,7 @@ var db *gorm.DB
 //初始化db
 func InitDB() *gorm.DB {
 	db, err := gorm.Open(mysql.New(mysql.Config{
-		DSN: "root:123456@tcp(101.91.153.139:5001)/go_db?charset=utf8&parseTime=True",
+		DSN: "root:12345@tcp(101.91.153.139:5001)/go_db?charset=utf8&parseTime=True",
 		//DriverName:                "my_mysql_driver",
 		DefaultStringSize:         256,   // default size for string fields
 		DisableDatetimePrecision:  true,  // disable datetime precision, which not supported before MySQL 5.6
